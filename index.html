@@ -236,7 +236,7 @@
         <div class="pst_fixed zdex_9999 p_30" id="controls">
             <ul class="m_0 p_0 liststyle_none">
                 <li id="sound">
-                    <img src="sound.svg" class="wpx_35 cur_pointer">
+                    <img src="sound_mute.svg" class="wpx_35 cur_pointer">
                 </li>
 
             </ul>
@@ -304,11 +304,11 @@ $('#sound').click(() => {
 
     muted = !muted;
     if (muted) {
-        audio.pause();
-    } else {
         audio.play();
+    } else {
+        audio.pause();
     }
-    $('#sound').find('img').attr('src', muted ? 'sound_mute.svg' : 'sound.svg');
+    $('#sound').find('img').attr('src', muted ? 'sound.svg' : 'sound_mute.svg');
 
 });
 

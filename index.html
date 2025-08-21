@@ -304,11 +304,11 @@ $('#sound').click(() => {
 
     muted = !muted;
     if (muted) {
-        audio.play();
-    } else {
         audio.pause();
+    } else {
+        audio.play();
     }
-    $('#sound').find('img').attr('src', muted ? 'sound.svg' : 'sound_mute.svg');
+    $('#sound').find('img').attr('src', muted ? 'sound_mute.svg' : 'sound.svg');
 
 });
 

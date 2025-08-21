@@ -146,6 +146,7 @@
                     </a>
           
                     <h1 class="font_charm fspx_20 m_0 mt_20">RECEPCION</h1>
+                    <h1 class="font_charm fspx_20 m_0">SALON JERICÓ</h1>
                     <div class="font_urbanist fspx_15 line_height_18 max_wpx_200">
                         Av. Paso Blanco 997, 20905 Vista Hermosa, Ags.
                     </div>
@@ -235,7 +236,7 @@
         <div class="pst_fixed zdex_9999 p_30" id="controls">
             <ul class="m_0 p_0 liststyle_none">
                 <li id="sound">
-                    <img src="sound_mute.svg" class="wpx_35 cur_pointer">
+                    <img src="sound.svg" class="wpx_35 cur_pointer">
                 </li>
 
             </ul>
@@ -297,6 +298,7 @@ var countdownTimer = countdown(
 
 
 
+
 let muted = false;
 $('#sound').click(() => {
 
@@ -306,13 +308,15 @@ $('#sound').click(() => {
     } else {
         audio.pause();
     }
-    $('#sound').find('img').attr('src', muted ? 'sound.svg' : 'sound_mute.svg');
+    $('#sound').find('img').attr('src', muted ? 'sound_mute.svg' : 'sound.svg');
 
 });
 
 
 
 document.addEventListener('DOMContentLoaded', function() {
+
+    audio.play();
 
     floatingController.register('#controls', '.content', {
         width: 80,

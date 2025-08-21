@@ -137,6 +137,10 @@
     --bg-color: 154, 165, 165; 
     background-color: rgb(var(--bg-color));
 }
+.bg_olivo {
+    --bg-color: 43, 101, 67; 
+    background-color: rgb(var(--bg-color));
+}
 
 
 .bg_black {
